@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="flexslider/flexslider.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="magnific/magnific-popup.css">
+</head>
+<body>
+    <nav>
+        <label>ICT FOR YOU</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Feather<i class="fas fa-arrow-circle-down"></i></a>
+                <ul><li><a href="#">ทดสอบ 1</a></li>
+                    <li><a href="#">ทดสอบ 2</a></li>
+                    <li><a href="#">ทดสอบ 3</a></li>
+                    <li><a href="#">ทดสอบ 4</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="#">Web Design<i class="fas fa-arrow-circle-down"></i></a>
+                <ul><li><a href="#">front end</a></li>
+                    <li><a href="#">back end</a></li>
+                    <li><a href="#">other<i class="far fa-arrow-alt-circle-right"></i></a>
+                        <ul><li><a href="#">Developer</a></li>
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">status</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+
+    </nav>
+<!--slideshow-->
+<div class="slideshow">
+    <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="images/bg.jpg" />
+          </li>
+          <li>
+            <img src="images/bg2.jpg" />
+          </li>
+          <li>
+            <img src="images/bg3.jpg" />
+          </li>
+          
+        </ul>
+      </div>
+    <a href="#"><i class="fas fa-arrow-circle-down fa-3x"></i></a>
+    
+</div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/69d6262e71.js" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="flexslider/jquery.flexslider.js"></script>
+    <script src="magnific/jquery.magnific-popup.min.js"></script>
+    <script>
+$(window).load(function() 
+{
+    $('.flexslider').flexslider({
+    animation: "slide",
+    slideshowSpeed:4000
+    });
+
+    $('.popup').magnificPopup({
+    type: 'image',gallery:{enabled:true},zoom:{enabled:true}
+    // other options
+    });
+
+});
+    </script>
+
+<!--image gallary-->
+
+
+<h1>Portfolio project</h1>
+<div class="gallery">
+    <div class="row">
+        <div class="col">
+            <a class="popup" href="images/gallery/1.jpg"><img src="images/gallery/1.jpg"></a>
+        </div>
+        <div class="col">
+            <a class="popup" href="images/gallery/2.jpg"><img src="images/gallery/2.jpg"></a>
+        </div>
+        <div class="col">
+            <a class="popup" href="images/gallery/3.jpg"><img src="images/gallery/3.jpg"></a>
+        </div>
+        <div class="col">
+            <a class="popup" href="images/gallery/4.jpg"><img src="images/gallery/4.jpg"></a>
+        </div>
+        
+    </div>
+
+</div>
+
+<footer>
+    <div>
+        &copy;CopyRight 2020
+    </div>
+</footer>
+
+
+</body>
+</html>
